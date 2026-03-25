@@ -1,0 +1,213 @@
+/* ── OctoFit Tracker – Global Theme ── */
+
+:root {
+  --octo-navy:   #1a3a5c;
+  --octo-teal:   #17a2b8;
+  --octo-green:  #28a745;
+  --octo-orange: #fd7e14;
+  --octo-light:  #e8f4f8;
+  --octo-white:  #ffffff;
+  --octo-dark:   #212529;
+  --octo-muted:  #6c757d;
+}
+
+/* ── Body / Background ── */
+body {
+  background-color: var(--octo-light);
+  color: var(--octo-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  text-align: left;
+}
+
+/* ── Navigation Bar ── */
+.navbar {
+  background: linear-gradient(135deg, var(--octo-navy) 0%, #0d2a45 100%) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  color: var(--octo-white) !important;
+  font-weight: 700;
+  font-size: 1.4rem !important;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand img.octofit-logo {
+  height: 36px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--octo-white) !important;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ── Headings ── */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--octo-navy);
+  font-weight: 700;
+}
+
+h1 .text-primary,
+.card-title .text-primary {
+  color: var(--octo-teal) !important;
+}
+
+/* ── Links ── */
+a {
+  color: var(--octo-teal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--octo-navy);
+  text-decoration: underline;
+}
+
+/* ── Cards ── */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(26, 58, 92, 0.1);
+  background-color: var(--octo-white);
+}
+
+.card-title {
+  color: var(--octo-navy);
+  border-bottom: 2px solid var(--octo-teal);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Tables ── */
+.table {
+  background-color: var(--octo-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: var(--octo-navy);
+  color: var(--octo-white);
+  border-color: #0d2a45;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(23, 162, 184, 0.07);
+}
+
+.table-bordered {
+  border-color: #d0e8f0;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(23, 162, 184, 0.15) !important;
+  cursor: default;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  background-color: var(--octo-teal);
+  border-color: var(--octo-teal);
+  color: var(--octo-white);
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--octo-navy);
+  border-color: var(--octo-navy);
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  background-color: var(--octo-green);
+  border-color: var(--octo-green);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-warning {
+  background-color: var(--octo-orange);
+  border-color: var(--octo-orange);
+  color: var(--octo-white);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* ── Welcome Card ── */
+.welcome-hero {
+  background: linear-gradient(135deg, var(--octo-navy) 0%, var(--octo-teal) 100%);
+  color: var(--octo-white);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.welcome-hero h1 {
+  color: var(--octo-white);
+  font-size: 2.2rem;
+}
+
+.welcome-hero span {
+  color: #aee9f5;
+}
+
+.welcome-hero p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.1rem;
+  margin-top: 0.75rem;
+}
+
+/* ── App-logo (legacy – kept for compatibility) ── */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: var(--octo-teal);
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
